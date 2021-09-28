@@ -30,20 +30,18 @@ if HEROKU:
     RSS_DELAY = int(environ.get("RSS_DELAY", None))
     PM_PERMIT = bool(int(environ.get("PM_PERMIT", None)))
 else:
-    BOT_TOKEN = "467677575:YZfaakjwd545dfg-N6JStihhuw5gQeZHntc"
-    API_ID = 123456
-    API_HASH = "dfxcgs5s12hdcxfgdfz"
+    BOT_TOKEN = "2026504958:AAFgjj1Cp7qv27ibKuXOGkss165EaSPjSds"
+    API_ID = 7307631
+    API_HASH = "0fe96911f6b94a6f6bbec202adbfaaf2"
     USERBOT_PREFIX = "."
-    PHONE_NUMBER = "+916969696969"  # Need for Userbot
-    SUDO_USERS_ID = [
-        4543744343,
-        543214651351,
+    PHONE_NUMBER = "+919994417013"  
+    SUDO_USERS_ID = 1909663268
     ]  # Sudo users have full access to everything, don't trust anyone
-    LOG_GROUP_ID = -100125431255
-    GBAN_LOG_GROUP_ID = -100125431255
-    MESSAGE_DUMP_CHAT = -1001181696437
+    LOG_GROUP_ID = -1001563789052
+    GBAN_LOG_GROUP_ID = -1001563789052
+    MESSAGE_DUMP_CHAT = -1001563789052
     WELCOME_DELAY_KICK_SEC = 300
-    MONGO_URL = "mongodb+srv://username:password@cluster0.ksiis.mongodb.net/YourDataBaseName?retryWrites=true&w=majority"
+    MONGO_URL = "mongodb+srv://suryaakumar:suryaa737@cluster0.ltkky.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
     ARQ_API_KEY = "Get this from @ARQRobot"
     ARQ_API_URL = "https://thearq.tech"
     LOG_MENTIONS = True
