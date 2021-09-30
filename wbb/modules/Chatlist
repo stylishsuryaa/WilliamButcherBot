@@ -1,0 +1,13 @@
+@run_async
+@sudo_plus
+def chats(bot: Bot, update: Update):
+
+    all_chats = sql.get_all_chats() or []
+    chatfile = 'List of chats.\n'
+    for chat in all_chats:
+        chatfile += f"{chat.chat_name} - ({chat.chat_id})\n"
+
+    with BytesIO(str.encode(chatfile)) as output:
+        output.name = "chatlist.txt"
+        update.effective_message.reply_document(document=output, filename="chatlist.txt",
+                                                caption="Here is the list of chats in my Hit List.")
